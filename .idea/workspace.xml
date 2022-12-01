@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="540e6642-d7af-4802-9880-ce6f7f0057fb" name="Changes" comment="" />
+    <list default="true" id="540e6642-d7af-4802-9880-ce6f7f0057fb" name="Changes" comment="Добавил модели данных на основе ведомости + сохранил диаграмму в виде картинки">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/Courses/Chapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/Courses/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/Courses/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/Courses/TypeTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/Persons/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/Persons/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/ReportCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/Scores/ChapterScores.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/Scores/CourseScores.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/Scores/TaskScores.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/StudentScores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Models/Chapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExampleDBModels/Chapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Models/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExampleDBModels/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExampleDBModels/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Models/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExampleDBModels/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Models/TypeTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExampleDBModels/TypeTask.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +33,45 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="AnalyticsProject" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2IJHjK9Efo500DPaJ9WqCSKAs6T" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,9 +80,23 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Bandik/Java Study/AnalyticsProject/src/main/java/org/example",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Bandik\Java Study\AnalyticsProject\src\main\java\org\example" />
+      <recent name="D:\Bandik\Java Study\AnalyticsProject" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Bandik\Java Study\AnalyticsProject\src\main\java\org\example" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -36,8 +105,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669892899673</updated>
+      <workItem from="1669892901104" duration="350000" />
+      <workItem from="1669893263168" duration="11243000" />
     </task>
+    <task id="LOCAL-00001" summary="Добавил модели данных на основе ведомости + сохранил диаграмму в виде картинки">
+      <created>1669893427964</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669893427964</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -49,5 +131,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Добавил модели данных на основе ведомости + сохранил диаграмму в виде картинки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил модели данных на основе ведомости + сохранил диаграмму в виде картинки" />
   </component>
 </project>
