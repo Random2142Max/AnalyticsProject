@@ -1,5 +1,5 @@
-package org.example.Models;
-
+package ExampleDBModels;
+/*
 public class Student {
     public int Pk_Id;
     public String FirstName;
@@ -14,3 +14,4 @@ public class Student {
         this.Fk_id_course = Integer.parseUnsignedInt(id_course);
     }
 }
+*/

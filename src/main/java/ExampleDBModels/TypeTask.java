@@ -1,5 +1,5 @@
-package org.example.Models;
-
+package ExampleDBModels;
+/*
 public class TypeTask {
     public int Pk_Id;
     public String Name;
@@ -9,3 +9,4 @@ public class TypeTask {
         this.Name = name;
     }
 }
+*/

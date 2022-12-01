@@ -1,7 +1,7 @@
-package org.example.Models;
+package ExampleDBModels;
 
 import java.util.ArrayList;
-
+/*
 public class Chapter {
     public int Pk_Id;
     public String Chapter;
@@ -12,4 +12,4 @@ public class Chapter {
         this.Chapter = chapter;
         this.Fk_CollectionIdTasks = collectionIdTasks;
     }
-}
+}*/

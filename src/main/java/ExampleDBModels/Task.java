@@ -1,5 +1,5 @@
-package org.example.Models;
-
+package ExampleDBModels;
+/*
 public class Task {
     public int Pk_Id;
     public String Name;
@@ -14,3 +14,4 @@ public class Task {
         this.Fk_id_TypeTask = Integer.parseUnsignedInt(Fk_id_typeTask);
     }
 }
+*/

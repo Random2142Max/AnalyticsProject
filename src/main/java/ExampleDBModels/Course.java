@@ -1,5 +1,5 @@
-package org.example.Models;
-
+package ExampleDBModels;
+/*
 import java.util.Dictionary;
 
 public class Course {
@@ -17,3 +17,4 @@ public class Course {
         this.Fk_CollectionsCourseId = fk_CollectionsCourseId;
     }
 }
+*/
