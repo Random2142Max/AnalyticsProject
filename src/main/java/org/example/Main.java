@@ -1,5 +1,7 @@
-package org.example;public class Main {
+package org.example;
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Report report =  new Report("basicprogramming_2.csv");
+        report.report();
     }
 }
