@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="540e6642-d7af-4802-9880-ce6f7f0057fb" name="Changes" comment="" />
+    <list default="true" id="540e6642-d7af-4802-9880-ce6f7f0057fb" name="Changes" comment="Изменения:&#10;1) Добавлен Класс Report для парсинга&#10;2) Добавлен парсинг моделей из basicprogramming_2.csv в Report;&#10;3) В парсинге реализовано создание объектов Student,TypeTask,Task.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Report.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +18,48 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="AnalyticsProject" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Task2" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2IJHjK9Efo500DPaJ9WqCSKAs6T" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,9 +68,90 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Bandik/Java Study/AnalyticsProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Bandik\Java Study\AnalyticsProject\src\main\java\org\example" />
+      <recent name="D:\Bandik\Java Study\AnalyticsProject" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Bandik\Java Study\AnalyticsProject\src\main\java\org\example" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="AnalyticsProject.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnalyticsProject [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AnalyticsProject [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.AnalyticsProject [dependencies]" />
+        <item itemvalue="Gradle.AnalyticsProject [test]" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -36,8 +160,58 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669892899673</updated>
+      <workItem from="1669892901104" duration="350000" />
+      <workItem from="1669893263168" duration="11592000" />
+      <workItem from="1669967107927" duration="1694000" />
+      <workItem from="1669968823656" duration="1310000" />
+      <workItem from="1669973253097" duration="4000" />
+      <workItem from="1670054763693" duration="532000" />
+      <workItem from="1670055333279" duration="208000" />
+      <workItem from="1670066900725" duration="1122000" />
+      <workItem from="1670068068343" duration="626000" />
+      <workItem from="1670068886613" duration="710000" />
+      <workItem from="1670069620433" duration="964000" />
+      <workItem from="1670070597198" duration="781000" />
+      <workItem from="1670071392513" duration="84000" />
+      <workItem from="1670071550989" duration="152000" />
+      <workItem from="1670071736002" duration="608000" />
+      <workItem from="1670072830306" duration="1466000" />
+      <workItem from="1670085809446" duration="690000" />
+      <workItem from="1670320109104" duration="6269000" />
+      <workItem from="1670405822198" duration="1031000" />
     </task>
+    <task id="LOCAL-00001" summary="Добавил модели данных на основе ведомости + сохранил диаграмму в виде картинки">
+      <created>1669893427964</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669893427964</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Изменения:&#10;1) Добавил модели данных;&#10;2) Изменил классы и классы наследники;">
+      <created>1669913918273</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669913918274</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Изменения:&#10;1) Добавлен Класс Report для парсинга&#10;2) Добавлен парсинг моделей из basicprogramming_2.csv в Report;&#10;3) В парсинге реализовано создание объектов Student,TypeTask,Task.">
+      <created>1670406661567</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670406661568</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <envs>
+      <env key="LC_ALL" value="YOUR_LANGUAGE.utf8" />
+      <env key="LANG" value="&quot;$LC_ALL&quot;" />
+    </envs>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -49,5 +223,27 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Добавил модели данных на основе ведомости + сохранил диаграмму в виде картинки" />
+    <MESSAGE value="Изменения:&#10;1) Добавил модели данных;&#10;2) Изменил классы и классы наследники;" />
+    <MESSAGE value="Изменения:&#10;1) Добавлен Класс Report для парсинга&#10;2) Добавлен парсинг моделей из basicprogramming_2.csv в Report;&#10;3) В парсинге реализовано создание объектов Student,TypeTask,Task." />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменения:&#10;1) Добавлен Класс Report для парсинга&#10;2) Добавлен парсинг моделей из basicprogramming_2.csv в Report;&#10;3) В парсинге реализовано создание объектов Student,TypeTask,Task." />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="typeTask" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AnalyticsProject$Main.ic" NAME="Main Coverage Results" MODIFIED="1670324826258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.*</FILTER>
+    </SUITE>
   </component>
 </project>
