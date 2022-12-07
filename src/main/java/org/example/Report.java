@@ -51,11 +51,11 @@ public class Report {
     // Метод для вывода всей информации в консоль
     private void outAllInfoConsole() {
         // Вывод глав курса
-        //outFilteredHeader();
+        outFilteredHeader();
         // Вывод заданий
-        //outTasks();
+        outTasks();
         // Вывод студентов
-        //outStudentMap();
+        outStudentMap();
     }
     private void setFilteredHeader() {
 
