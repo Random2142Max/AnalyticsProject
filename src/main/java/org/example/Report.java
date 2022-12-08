@@ -1,8 +1,12 @@
 package org.example;
 
+import com.vk.api.sdk.exceptions.ApiException;
+import com.vk.api.sdk.exceptions.ApiTooManyException;
+import com.vk.api.sdk.exceptions.ClientException;
 import org.example.Models.Courses.Task;
 import org.example.Models.Courses.TypeTask;
 import org.example.Models.Persons.Student;
+import org.example.VkApi.VkRepository;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -38,6 +42,8 @@ public class Report {
         readWriteAllInfo();
         // Выводим студентов записанных в коллекцию
         outAllInfoConsole();
+        // Vk Api запросы
+        VkApiRequests();
     }
     // Метод, для считывания и записывания всех данных с файла
     private void readWriteAllInfo() {
@@ -56,6 +62,65 @@ public class Report {
         outTasks();
         // Вывод студентов
         outStudentMap();
+    }
+    private void VkApiRequests() {
+        // VK Api
+        VkRepository vk = new VkRepository();
+        try {
+            System.out.println();
+            // Вывод студентов с популярной группой, на которую они подписаны + кол-во подписчиков
+            searchStudentsPopularGroupsVkApi(vk);
+        }
+        catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+    private void searchStudentsPopularGroupsVkApi(VkRepository vk) throws InterruptedException {
+        // Счётчик запросов
+        int countRequest = 0;
+
+        for (var student : studentMap.values()) {
+            // Оптимальное кол-во запросов 3,
+            // чтобы меня не выкинуло ставим таймер на паузу в 2,5 (с)
+            if (countRequest == 3) {
+                Thread.sleep(2500);
+                countRequest = 0;
+            }
+            else countRequest++;
+
+            try {
+                System.out.println(String.format(
+                        "Выбран студент : %s",student.getFullName()));
+
+                var group = vk.getMostPopularGroupByUser(student.getFullName());
+                var membersCount = vk.getGroupMembersCount(group);
+                var groupName = vk.getGroupName(group);
+
+                if (groupName.equals("Nan group")) {
+                    System.out.println(
+                            String.format("Не найдена группа в VK и студент"));
+                }
+                else {
+                    System.out.println(
+                            String.format("Самая популярная группа: %s, \n" +
+                                    "Кол-во подписчиков группы: %s",
+                            groupName,membersCount));
+                }
+                System.out.println();
+            }
+            catch (IndexOutOfBoundsException e) {
+                System.out.println(
+                        String.format("Студент %s, не найден VK!",student.getFullName()
+                        ));
+            }
+            catch (ApiTooManyException e) {
+                System.out.println(String.format("Превышен лимит запросов: %s",countRequest));
+            }
+            catch (ClientException | ApiException e) {
+                System.out.println("Не получилось подключится! Проверьте CODE и ID");
+                e.printStackTrace();
+            }
+        }
     }
     private void setFilteredHeader() {
 
@@ -149,7 +214,7 @@ public class Report {
     }
     private void setStudentInformation() {
         // Счётчик для ограничения вывода информации
-        Integer count = 0;
+        Integer countStudents = 0;
 
         fileList.remove(0); // Удаляем заголовки
         fileList.remove(0); // Удаляем подзаголовки
@@ -159,12 +224,12 @@ public class Report {
         // Также тут надо поставить ограничение,
         // чтобы метод не сломался, при достижении конца
         for (var item : fileList) {
-            // Остановка после получения 1-ых 7-ых студентов
-            if (count == 6) break;// Ограничение
+
+            if (countStudents == 25) break;// Ограничение
 
             // Работа со списком студентов
             setStudents(item);
-            count++;
+            countStudents++;
         }
     }
     private void setStudents(String str) {

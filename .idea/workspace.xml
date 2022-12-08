@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="540e6642-d7af-4802-9880-ce6f7f0057fb" name="Changes" comment="Изменения:&#10;1) Добавлен Класс Report для парсинга&#10;2) Добавлен парсинг моделей из basicprogramming_2.csv в Report;&#10;3) В парсинге реализовано создание объектов Student,TypeTask,Task.">
+    <list default="true" id="540e6642-d7af-4802-9880-ce6f7f0057fb" name="Changes" comment="Изменения:&#10;1) Добавлен вывод данных в парсинге моделей, в Report;&#10;3) В Report добавлены методы, для вывода записанных данных из csv;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/VkApi/VkRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Report.java" afterDir="false" />
     </list>
@@ -48,7 +49,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Task2" />
+        <entry key="$PROJECT_DIR$" value="Task4" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -178,7 +179,9 @@
       <workItem from="1670072830306" duration="1466000" />
       <workItem from="1670085809446" duration="690000" />
       <workItem from="1670320109104" duration="6269000" />
-      <workItem from="1670405822198" duration="1031000" />
+      <workItem from="1670405822198" duration="1745000" />
+      <workItem from="1670502409573" duration="322000" />
+      <workItem from="1670502791840" duration="8170000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил модели данных на основе ведомости + сохранил диаграмму в виде картинки">
       <created>1669893427964</created>
@@ -201,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670406661568</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Изменения:&#10;1) Добавлен вывод данных в парсинге моделей, в Report;&#10;3) В Report добавлены методы, для вывода записанных данных из csv;">
+      <created>1670407439510</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670407439510</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -228,7 +238,8 @@
     <MESSAGE value="Добавил модели данных на основе ведомости + сохранил диаграмму в виде картинки" />
     <MESSAGE value="Изменения:&#10;1) Добавил модели данных;&#10;2) Изменил классы и классы наследники;" />
     <MESSAGE value="Изменения:&#10;1) Добавлен Класс Report для парсинга&#10;2) Добавлен парсинг моделей из basicprogramming_2.csv в Report;&#10;3) В парсинге реализовано создание объектов Student,TypeTask,Task." />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменения:&#10;1) Добавлен Класс Report для парсинга&#10;2) Добавлен парсинг моделей из basicprogramming_2.csv в Report;&#10;3) В парсинге реализовано создание объектов Student,TypeTask,Task." />
+    <MESSAGE value="Изменения:&#10;1) Добавлен вывод данных в парсинге моделей, в Report;&#10;3) В Report добавлены методы, для вывода записанных данных из csv;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменения:&#10;1) Добавлен вывод данных в парсинге моделей, в Report;&#10;3) В Report добавлены методы, для вывода записанных данных из csv;" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
